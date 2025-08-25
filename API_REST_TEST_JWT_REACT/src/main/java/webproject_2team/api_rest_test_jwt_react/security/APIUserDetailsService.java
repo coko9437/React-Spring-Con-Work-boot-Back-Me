@@ -41,8 +41,8 @@ public class APIUserDetailsService implements UserDetailsService {
         APIUserDTO dto = new APIUserDTO(
                 apiUser.getMid(), // 사용자 ID
                 apiUser.getMpw(), // 사용자 비밀번호
-                List.of(new SimpleGrantedAuthority("ROLE_USER")) // 권한 설정
-//                List.of(new SimpleGrantedAuthority("ROLE_ADMIN")) // 권한 설정
+//                List.of(new SimpleGrantedAuthority("ROLE_USER")) // 권한 설정
+                List.of(new SimpleGrantedAuthority("ROLE_ADMIN")) // 권한 설정
         );
 
         // DTO 정보 로깅
